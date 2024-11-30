@@ -1,0 +1,15 @@
+export enum UserMessagesError {
+  USER_ALREADY_EXIST = 'Not possible run operation, user already exist',
+  USER_NOT_FOUND = 'User not found',
+  USER_NOT_DELETED = 'Oops... There was an error deleting the user. Please try again later.',
+  USER_NOT_RESTORED = 'Oops... There was an error restoring the user. Please try again later.',
+  INTERNAL_SERVER_ERROR = 'Internal server error. Contact with the administrator',
+  USER_ERROR = 'Oops... There were problems creating or editing the user. Please try again later',
+  USER_PASSWORD_NOT_STRONG = 'Password must be at least 8 characters long and contain at least 1 lowercase letter, 1 uppercase letter, 1 number, and 1 special symbol.',
+  USER_PASSWORD_NOT_MATCH = 'Password and password_verify does not match',
+  USER_PASSWORD_NOT_MATCH_OLD = 'The password entered does not match the previous password',
+  USER_EMAIL_VALID = 'You must enter a valid email format',
+  USER_MAIL_DIFFERENT = 'The user you have entered does not correspond to the one you previously registered with',
+  USER_TOKEN_USED = 'The token sent is not valid or has already been used previously.',
+  ROL_NOT_FOUND = 'The role you are trying to assign to the user does not exist in our database.',
+}
